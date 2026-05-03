@@ -1,0 +1,10 @@
+requests
+aiohttp
+tornado
+twisted
+scrapy
+playwright
+pytest
+redis
+pytest-asyncio
+sqlalchemy

@@ -1,0 +1,33 @@
+from abc import ABC, abstractmethod
+
+
+class DedupInterface(ABC):
+    @abstractmethod
+    def sync_save(self, data): ...
+
+    @abstractmethod
+    def _sync_save(self, data): ...
+
+    @abstractmethod
+    def sync_is_exists(self, data): ...
+
+    @abstractmethod
+    async def sync_ensure_storage(self, storage): ...
+
+    @abstractmethod
+    def _sync_is_exists(self, data): ...
+
+    @abstractmethod
+    async def async_save(self, data): ...
+
+    @abstractmethod
+    async def _async_save(self, data): ...
+
+    @abstractmethod
+    async def async_is_exists(self, data): ...
+
+    @abstractmethod
+    async def _async_is_exists(self, data): ...
+
+    @abstractmethod
+    async def async_ensure_storage(self, storage): ...
